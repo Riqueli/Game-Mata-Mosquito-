@@ -78,6 +78,9 @@ function posicaoRandomica(){
   mosquito.id = 'mosquito'
   mosquito.onclick = function(){
     this.remove()
+    var audio1 = new Audio();
+    audio1.src = "Som/Song.wav";
+    audio1.play();
   }
   
   document.body.appendChild(mosquito)
