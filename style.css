@@ -3,11 +3,32 @@ html{
 }
 
 
-body{
-  background-image: url(imagens/bg.jpg);
+body {
+	background-image: url(imagens/bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  /* padding: 100px 0; */
+  background-position: 30% 45%;
+  background-size: cover;
+  margin: 0;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
+
+.painel {
+  position: absolute;
+  width: 190px;
+  padding: 10px;
+  bottom: 0px;
+  border-top: 1px solid white;
+  background: white;
+  opacity: 0.7;
+  border-radius: 0 13px 0 0;
+}
+
+/* Tipos de mosquito */
 
 .mosquito1 {
   width: 50px;
@@ -32,19 +53,11 @@ body{
     transform: scaleX(-1);
 }
 
-.painel{
-  position: absolute;
-  width: 190px;
-  padding: 10px;
-  left: 0px;
-  bottom: 0px;
-  border-top: solid 1px #fff;
-  background-color: #fff;
-  opacity: 0.7;
-}
+
 
 .vidas {
   float: left;
+  margin-top: 10px;
 }
 
 .cronometro{
@@ -52,3 +65,4 @@ body{
   font-size:20px ;
   font-weight: bold;
 }
+
